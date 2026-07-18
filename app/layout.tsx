@@ -4,12 +4,8 @@ import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Modern Outfit",
-    template: "%s | Modern Outfit",
-  },
-  description:
-    "Moda moderna, elegante y versátil para expresar tu estilo con confianza.",
+  title: "Modern Outfit",
+  description: "Style. Confidence. You.",
 };
 
 export default function RootLayout({
@@ -19,10 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className="min-h-screen bg-[#f8f5ef] text-neutral-950 antialiased">
+      <body className="flex min-h-screen flex-col bg-[#f8f4ed] text-neutral-950">
         <Header />
 
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
 
         <Footer />
       </body>

@@ -15,10 +15,31 @@ export default function Hero() {
             Nueva colección
           </p>
 
-          <h1 className="max-w-3xl font-serif text-5xl font-black uppercase leading-[0.92] tracking-tight sm:text-6xl lg:text-7xl">
-            Tu estilo.
-            <span className="block text-[#d6a85f]">Tu confianza.</span>
-            Tu esencia.
+          <h1 className="mt-6 font-serif font-black uppercase tracking-[-0.04em]">
+            <span
+              className="block leading-[0.9] text-white"
+              style={{ fontSize: "clamp(3rem, 5vw, 5.5rem)" }}
+            >
+              Tu estilo.
+            </span>
+
+            <span className="my-2 flex items-center gap-4">
+              <span className="hidden h-px w-10 bg-[#d7a961] sm:block" />
+
+              <span
+                className="block whitespace-nowrap leading-none text-[#d7a961]"
+                style={{ fontSize: "clamp(1.9rem, 3vw, 3.3rem)" }}
+              >
+                Tu confianza.
+              </span>
+            </span>
+
+            <span
+              className="block leading-[0.9] text-white"
+              style={{ fontSize: "clamp(3rem, 5vw, 5.5rem)" }}
+            >
+              Tu esencia.
+            </span>
           </h1>
 
           <p className="mt-7 max-w-xl text-base leading-8 text-neutral-300 sm:text-lg">
